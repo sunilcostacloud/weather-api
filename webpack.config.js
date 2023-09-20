@@ -58,7 +58,9 @@ module.exports = (_, argv) => ({
       remotes: {
         store: "store@http://localhost:8081/remoteEntry.js",
       },
-      exposes: {},
+      exposes: {
+        "./WeatherApiPage": "./src/WeatherApiPage"
+      },
       shared: {
         ...deps,
         react: {
